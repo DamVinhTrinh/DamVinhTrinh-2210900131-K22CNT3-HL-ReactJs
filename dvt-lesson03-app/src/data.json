@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "name": "Nguyễn Văn A",
+      "age": 20,
+      "address": "Hà Nội",
+      "hobby": "Đọc sách",
+      "level": "Beginner",
+      "avatar": "https://i.pravatar.cc/100?img=1"
+    },
+    {
+      "name": "Trần Thị B",
+      "age": 22,
+      "address": "TP. HCM",
+      "hobby": "Lập trình ReactJS",
+      "level": "Intermediate",
+      "avatar": "https://i.pravatar.cc/100?img=2"
+    },
+    {
+      "name": "Lê Văn C",
+      "age": 25,
+      "address": "Đà Nẵng",
+      "hobby": "Du lịch",
+      "level": "Advanced",
+      "avatar": "https://i.pravatar.cc/100?img=3"
+    }
+  ]
+}

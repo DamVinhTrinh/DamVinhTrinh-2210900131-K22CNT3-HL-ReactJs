@@ -1,0 +1,324 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+}
+
+.app-container {
+  text-align: center;
+  padding: 40px;
+}
+
+.app-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #6a11cb;
+  margin-bottom: 40px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+.cards-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 280px;
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}
+
+/* Avatar */
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0 auto 15px;
+  border: 3px solid #6a11cb;
+  object-fit: cover;
+}
+
+/* Loading spinner */
+.spinner {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #6a11cb;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin: 20px auto;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+button {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  border: none;
+  color: white;
+  font-size: 14px;
+  padding: 10px 16px;
+  margin-top: 10px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(106, 17, 203, 0.4);
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(37, 117, 252, 0.5);
+}
+/* Nền sáng */
+body {
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  transition: background 0.5s ease;
+}
+
+.app-container.dark {
+  background: linear-gradient(135deg, #232526, #414345);
+  color: #f0f0f0;
+}
+
+/* Card khi dark mode */
+.app-container.dark .card {
+  background: #2c2c2c;
+  color: #f0f0f0;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+}
+
+.app-container.dark .card:hover {
+  box-shadow: 0 12px 30px rgba(255,255,255,0.2);
+}
+
+/* Button darkmode */
+.darkmode-btn {
+  margin-bottom: 30px;
+  padding: 12px 20px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  color: #333;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.darkmode-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+}
+
+.app-container.dark .darkmode-btn {
+  background: linear-gradient(135deg, #141e30, #243b55);
+  color: #fff;
+}
+
+/* Background gradient động */
+body {
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #a18cd1, #fbc2eb);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+
+/* Gradient chạy liên tục */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.app-container {
+  text-align: center;
+  padding: 30px;
+  min-height: 100vh;
+}
+
+/* Card kiểu kính */
+.card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 25px;
+  margin: 20px;
+  width: 260px;
+  transition: all 0.4s ease;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* Hover: Glow + 3D */
+.card:hover {
+  transform: rotateY(10deg) scale(1.05);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.8), 0 0 40px rgba(0, 123, 255, 0.6);
+}
+
+/* Button gradient động */
+button {
+  margin-top: 15px;
+  padding: 12px 20px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(270deg, #ff6a00, #ee0979, #ff6a00);
+  background-size: 600% 600%;
+  animation: gradientMove 6s ease infinite;
+  transition: transform 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+button:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+/* Nền cyberpunk gradient tối */
+body {
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(circle at top left, #0f0c29, #302b63, #24243e);
+  color: #fff;
+  min-height: 100vh;
+}
+
+/* Container */
+.app-container {
+  text-align: center;
+  padding: 30px;
+}
+
+/* Tiêu đề neon */
+h1 {
+  font-size: 2rem;
+  color: #ff00ff;
+  text-shadow: 0 0 5px #ff00ff, 0 0 15px #ff00ff, 0 0 30px #ff00ff;
+  margin-bottom: 30px;
+}
+
+/* Card Cyberpunk */
+.card {
+  background: rgba(20, 20, 40, 0.85);
+  border-radius: 16px;
+  padding: 25px;
+  margin: 20px;
+  width: 260px;
+  transition: all 0.4s ease;
+  border: 1px solid rgba(255, 0, 255, 0.3);
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.4), 0 0 30px rgba(255, 0, 255, 0.3);
+}
+
+/* Hover glow */
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00fff7, 0 0 40px #ff00ff, 0 0 80px #00fff7;
+}
+
+/* Avatar */
+.card img {
+  border-radius: 50%;
+  border: 3px solid #00fff7;
+  box-shadow: 0 0 15px #00fff7, 0 0 30px #ff00ff;
+  transition: transform 0.3s ease;
+}
+
+.card img:hover {
+  transform: rotate(5deg) scale(1.1);
+}
+
+/* Button Neon */
+button {
+  margin-top: 15px;
+  padding: 12px 20px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(90deg, #00fff7, #ff00ff, #00fff7);
+  background-size: 300% 300%;
+  animation: neonButton 5s linear infinite;
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 15px #ff00ff, 0 0 25px #00fff7;
+}
+
+button:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 20px #00fff7, 0 0 40px #ff00ff;
+}
+
+/* Hiệu ứng gradient động cho button */
+@keyframes neonButton {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+/* Card Cyberpunk + Border Neon chạy */
+.card {
+  position: relative;
+  background: rgba(20, 20, 40, 0.9);
+  border-radius: 16px;
+  padding: 25px;
+  margin: 20px;
+  width: 260px;
+  transition: all 0.4s ease;
+  overflow: hidden; /* ẩn border khi chạy */
+  z-index: 1;
+}
+
+/* Hiệu ứng border chạy vòng quanh */
+.card::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(270deg, #ff00ff, #00fff7, #ff00ff);
+  background-size: 600% 600%;
+  border-radius: 18px;
+  z-index: -1;
+  animation: borderMove 6s linear infinite;
+}
+
+/* Animation border */
+@keyframes borderMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Hover: phóng to + glow */
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #00fff7, 0 0 50px #ff00ff, 0 0 80px #00fff7;
+}
